@@ -58,10 +58,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="AndroidFullScreen">
+      <feature name="CAGIFS">
         <param 
           name="android-package" 
-          value="com.mesmotronic.plugins.FullScreenPlugin" 
+          value="com.outsystemscloud.cag.ifs" 
           />
       </feature>
     </config-file>
@@ -71,7 +71,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </config-file>
     <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
       <intent-filter>
-         <action android:name="com.mesmotronic.plugins.FullScreenPlugin.intent.ACTION" />
+         <action android:name="com.outsystemscloud.cag.ifs.intent.ACTION" />
          <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </config-file>
