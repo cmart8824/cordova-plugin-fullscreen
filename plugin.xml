@@ -71,7 +71,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </config-file>
     <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
       <intent-filter>
-         <action android:name="com.outsystemscloud.cag.ifs.intent.ACTION" />
+         <action android:name="android.intent.action.MAIN" />
          <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </config-file>
