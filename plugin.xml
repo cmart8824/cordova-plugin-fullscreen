@@ -58,20 +58,17 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="CAGIFS">
+      <feature name="AndroidFullScreen">
         <param 
           name="android-package" 
-          value="com.outsystemscloud.cag.ifs" 
+          value="com.mesmotronic.plugins.FullScreenPlugin" 
           />
       </feature>
     </config-file>
-    <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
-      <intent-filter>
-         <action android:name="android.intent.action.MAIN" />
-         <category android:name="android.intent.category.HOME" />
-         <category android:name="android.intent.category.DEFAULT" />
-      </intent-filter>
-    </config-file>
+    <!-- Adds support for screen ratios wider than 16:9 -->
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data android:name="android.max_aspect" android:value="2.16" />
+    </config-file>    
     <source-file
       src="src/android/com/mesmotronic/plugins/FullScreenPlugin.java" 
       target-dir="src/com/mesmotronic/plugins" 
