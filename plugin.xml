@@ -65,10 +65,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           />
       </feature>
     </config-file>
-    <!-- Adds support for screen ratios wider than 16:9 -->
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="android.max_aspect" android:value="2.16" />
-    </config-file>
     <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
       <intent-filter>
          <action android:name="android.intent.action.MAIN" />
